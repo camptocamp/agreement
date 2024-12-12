@@ -85,6 +85,16 @@ Contributors
 
   - Maxime Franco
 
+- `Trobz <https://www.trobz.com/>`__:
+
+  - Nhan Tran <nhant@trobz.com>
+
+Other credits
+-------------
+
+The migration of this module from 17.0 to 18.0 was financially supported
+by Camptocamp.
+
 Maintainers
 -----------
 
