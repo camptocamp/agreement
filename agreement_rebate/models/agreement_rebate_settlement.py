@@ -68,7 +68,9 @@ class AgreementRebateSettlement(models.Model):
 
     def create_invoice(self):
         invoice_dic = {}
-        for line in self.mapped("line_ids"):
+        for line in self.mapped("line_ids").filtered(
+            lambda ln: ln.invoice_status == "to_invoice"
+        ):
             key = line._get_invoice_key()
             if key not in invoice_dic:
                 invoice_dic[key] = line._prepare_invoice()
