@@ -5,7 +5,7 @@
 from freezegun import freeze_time
 
 from odoo import fields
-from odoo.tests.common import Form, TransactionCase, tagged
+from odoo.tests import Form, TransactionCase, tagged
 
 
 @freeze_time("2022-02-01 09:30:00")

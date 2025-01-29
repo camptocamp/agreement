@@ -45,7 +45,7 @@ class AgreementRebateSettlement(models.Model):
             vals["name"] = self.env["ir.sequence"].next_by_code(
                 "agreement.rebate.settlement"
             )
-        return super(AgreementRebateSettlement, self).create(vals_list)
+        return super().create(vals_list)
 
     def write(self, vals):
         res = super().write(vals)
@@ -101,7 +101,7 @@ class AgreementRebateSettlement(models.Model):
             "name": _("Details"),
             "type": "ir.actions.act_window",
             "res_model": "account.invoice.report",
-            "view_mode": "pivot,tree",
+            "view_mode": "pivot,list",
             "domain": domain,
             "context": self.env.context,
         }
@@ -291,9 +291,6 @@ class AgreementRebateSettlementLine(models.Model):
                 "invoice_origin": self.settlement_id.name,
                 "invoice_line_ids": [],
                 "currency_id": partner.currency_id.id,
-                # 'comment': self.note,
-                # 'user_id': self.user_id and self.user_id.id,
-                # 'team_id': self.team_id.id,
             }
         )
         return invoice_vals
@@ -335,8 +332,6 @@ class AgreementRebateSettlementLine(models.Model):
                     date_from=self.settlement_id.date_from,
                     date_to=self.settlement_id.date_to,
                 ),
-                # 'account_analytic_id': self.analytic_account_id.id,
-                # 'analytic_tag_ids': [(6, 0, self.analytic_tag_ids.ids)],
                 "price_unit": self.amount_rebate,
             }
         )
@@ -358,7 +353,7 @@ class AgreementRebateSettlementLine(models.Model):
             "name": _("Details"),
             "type": "ir.actions.act_window",
             "res_model": "account.invoice.report",
-            "view_mode": "pivot,tree",
+            "view_mode": "pivot,list",
             "domain": self.target_domain,
             "context": self.env.context,
         }

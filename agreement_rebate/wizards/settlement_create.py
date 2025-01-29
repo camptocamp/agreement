@@ -323,7 +323,9 @@ class AgreementSettlementCreateWiz(models.TransientModel):
     def _filter_settlement_lines(self, settlement_lines):
         return [
             line
-            for line in filter(lambda l: l[2]["amount_rebate"] != 0.0, settlement_lines)
+            for line in filter(
+                lambda sl: sl[2]["amount_rebate"] != 0.0, settlement_lines
+            )
         ]
 
     def _prepare_settlement(self, settlement_lines):

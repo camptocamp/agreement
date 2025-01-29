@@ -10,9 +10,9 @@ Agreement Rebate
    !! source digest: sha256:5b7242b1d8b9588b1724ec1d569cbd0ea5999c7ba01c2223a0efcc0c6a286fa4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-.. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
+.. |badge1| image:: https://img.shields.io/badge/maturity-Production%2FStable-green.png
     :target: https://odoo-community.org/page/development-status
-    :alt: Beta
+    :alt: Production/Stable
 .. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
@@ -112,8 +112,9 @@ Contributors
 
 -  `Tecnativa <https://www.tecnativa.com>`__:
 
-      -  Carlos Dauden <carlos.dauden@tecnativa.com>
-      -  Sergio Teruel <sergio.teruel@tecnativa.com>
+      -  Carlos Dauden
+      -  Sergio Teruel
+      -  Carlos Roca
 
 Maintainers
 -----------

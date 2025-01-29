@@ -123,9 +123,9 @@ class AgreementSettlementInvoiceCreateWiz(models.TransientModel):
             "type": "ir.actions.act_window",
             "name": "Invoices",
             "res_model": "account.move",
-            "view_mode": "tree,kanban,form,calendar,pivot,graph,activity",
+            "view_mode": "list,kanban,form,calendar,pivot,graph,activity",
             "domain": [("id", "in", invoices.ids)],
         }
         if tree_view and form_view:
-            action["views"] = [(tree_view.id, "tree"), (form_view.id, "form")]
+            action["views"] = [(tree_view.id, "list"), (form_view.id, "form")]
         return action
