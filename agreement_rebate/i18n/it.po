@@ -24,7 +24,6 @@ msgstr "% Sc"
 #. module: agreement_rebate
 #. odoo-python
 #: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#, python-format
 msgid "%(name)s - Period: %(date_from)s - %(date_to)s"
 msgstr "%(name)s - Periodo: %(date_from)s - %(date_to)s"
 
@@ -33,11 +32,12 @@ msgstr "%(name)s - Periodo: %(date_from)s - %(date_to)s"
 msgid ""
 "<i class=\"fa fa-filter\"/>\n"
 "                            You can create a filter to apply the rebate.\n"
-"                            Categories, products, variants, generic conditions to reuse or a custom filter"
+"                            Categories, products, variants, generic "
+"conditions to reuse or a custom filter"
 msgstr ""
 "<i class=\"fa fa-filter\"/>\n"
-"                            Si può creare un filtro per applicare lo sconto."
-"\n"
+"                            Si può creare un filtro per applicare lo "
+"sconto.\n"
 "                            Categorie, prodotti, varianti, condizioni "
 "generiche da riutilizzare o un filtro personalizzato"
 
@@ -280,8 +280,6 @@ msgstr "Filtro data"
 #. module: agreement_rebate
 #. odoo-python
 #: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#, python-format
 msgid "Details"
 msgstr "Dettagli"
 
@@ -420,17 +418,6 @@ msgid "Journals"
 msgstr "Registri"
 
 #. module: agreement_rebate
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
-
-#. module: agreement_rebate
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__write_uid
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__write_uid
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__write_uid
@@ -507,7 +494,6 @@ msgstr "Periodo"
 #. module: agreement_rebate
 #. odoo-python
 #: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#, python-format
 msgid "Please define an accounting sales journal for this company."
 msgstr "Definire un registro vendite contabilità per questa azienda."
 
@@ -711,3 +697,6 @@ msgstr "Nota di credito fornitore"
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement__rebate_type
 msgid "rebate type"
 msgstr "tipo sconto"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
