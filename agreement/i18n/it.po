@@ -383,11 +383,15 @@ msgstr "Utilizza modello contratto"
 msgid "Use agreement type"
 msgstr "Usa tipo accordo"
 
-#~ msgid "Website Messages"
-#~ msgstr "Messaggi sito web"
+#. module: agreement
+#: model:ir.model.fields,field_description:agreement.field_agreement__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi sito web"
 
-#~ msgid "Website communication history"
-#~ msgstr "Cronologia comunicazioni sito web"
+#. module: agreement
+#: model:ir.model.fields,help:agreement.field_agreement__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia comunicazioni sito web"
 
 #, python-format
 #~ msgid "%s (copy)"

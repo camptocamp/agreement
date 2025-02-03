@@ -387,6 +387,16 @@ msgstr "Vereinbarungsvorlage verwenden"
 msgid "Use agreement type"
 msgstr "Verwenden Sie den Vereinbarungstyp"
 
+#. module: agreement
+#: model:ir.model.fields,field_description:agreement.field_agreement__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: agreement
+#: model:ir.model.fields,help:agreement.field_agreement__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
 #~ msgid "ID used for internal contract tracking."
 #~ msgstr "ID, die zur internen Vertragsverfolgung verwendet wird."
 

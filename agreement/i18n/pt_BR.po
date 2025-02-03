@@ -382,6 +382,16 @@ msgstr "Usar modelo de acordo"
 msgid "Use agreement type"
 msgstr "Usar tipo de acordo"
 
+#. module: agreement
+#: model:ir.model.fields,field_description:agreement.field_agreement__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: agreement
+#: model:ir.model.fields,help:agreement.field_agreement__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
 #, python-format
 #~ msgid "%s (copy)"
 #~ msgstr "%s (copiar)"
