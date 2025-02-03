@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,7 +21,6 @@ msgstr ""
 #. module: agreement_rebate
 #. odoo-python
 #: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#, python-format
 msgid "%(name)s - Period: %(date_from)s - %(date_to)s"
 msgstr ""
 
@@ -272,8 +271,6 @@ msgstr ""
 #. module: agreement_rebate
 #. odoo-python
 #: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#, python-format
 msgid "Details"
 msgstr ""
 
@@ -410,17 +407,6 @@ msgid "Journals"
 msgstr ""
 
 #. module: agreement_rebate
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line____last_update
-#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz____last_update
-msgid "Last Modified on"
-msgstr ""
-
-#. module: agreement_rebate
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__write_uid
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__write_uid
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__write_uid
@@ -497,7 +483,6 @@ msgstr ""
 #. module: agreement_rebate
 #. odoo-python
 #: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
-#, python-format
 msgid "Please define an accounting sales journal for this company."
 msgstr ""
 
