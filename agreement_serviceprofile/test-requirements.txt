@@ -1,1 +1,1 @@
-odoo-addon-agreement_legal @ git+https://github.com/COA/agreement.git@refs/pull/69/head#subdirectory=agreement_legal
+odoo-addon-agreement_legal @ git+https://github.com/OCA/agreement.git@refs/pull/69/head#subdirectory=agreement_legal
