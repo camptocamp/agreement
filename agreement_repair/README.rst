@@ -46,12 +46,12 @@ Usage
 
 To use this module, you need to:
 
-- Go to Repair > Repair Orders
-- Select or create a repair order and set the agreement
-- Go to Agreement > Agreements
-- Open the previous agreement
-- Click on the smart button "Repairs" to see the list of related repair
-  orders
+-  Go to Repair > Repair Orders
+-  Select or create a repair order and set the agreement
+-  Go to Agreement > Agreements
+-  Open the previous agreement
+-  Click on the smart button "Repairs" to see the list of related repair
+   orders
 
 Known issues / Roadmap
 ======================
@@ -80,19 +80,19 @@ Authors
 Contributors
 ------------
 
-- Sandip Mangukiya <smangukiya@opensourceintegrators.com>
-- Serpent Consulting Services Pvt. Ltd. <support@serpentcs.com>
-- Italo LOPES. <italo.lopes@camptocamp.com>
-- `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`__
+-  Sandip Mangukiya <smangukiya@opensourceintegrators.com>
+-  Serpent Consulting Services Pvt. Ltd. <support@serpentcs.com>
+-  Italo LOPES. <italo.lopes@camptocamp.com>
+-  `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`__
 
-  - Bhavesh Heliconia
+   -  Bhavesh Heliconia
 
 Other credits
 -------------
 
 The development of this module has been financially supported by:
 
-- Open Source Integrators <https://opensourceintegrators.com>
+-  Open Source Integrators <https://opensourceintegrators.com>
 
 Maintainers
 -----------
