@@ -14,7 +14,7 @@ class TestAgreementRebateBase(AccountTestInvoicingCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env.user.groups_id += cls.env.ref(
+        cls.env.user.group_ids += cls.env.ref(
             "agreement_rebate.group_use_agreement_rebate"
         )
         cls.Partner = cls.env["res.partner"]
@@ -31,7 +31,7 @@ class TestAgreementRebateBase(AccountTestInvoicingCommon):
         cls.ProductTmplAttributeValue = cls.env["product.template.attribute.value"]
         cls.AgreementSettlement = cls.env["agreement.rebate.settlement"]
         cls.AgreementSettlementCreateWiz = cls.env["agreement.settlement.create.wiz"]
-        cls.category_all = cls.env.ref("product.product_category_all")
+        cls.category_all = cls.ProductCategory.create({"name": "All"})
         cls.categ_1 = cls.ProductCategory.create(
             {"parent_id": cls.category_all.id, "name": "Category 1"}
         )

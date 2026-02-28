@@ -21,13 +21,13 @@ Agreement Rebate
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fagreement-lightgray.png?logo=github
-    :target: https://github.com/OCA/agreement/tree/18.0/agreement_rebate
+    :target: https://github.com/OCA/agreement/tree/19.0/agreement_rebate
     :alt: OCA/agreement
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/agreement-18-0/agreement-18-0-agreement_rebate
+    :target: https://translation.odoo-community.org/projects/agreement-19-0/agreement-19-0-agreement_rebate
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
-    :target: https://runboat.odoo-community.org/builds?repo=OCA/agreement&target_branch=18.0
+    :target: https://runboat.odoo-community.org/builds?repo=OCA/agreement&target_branch=19.0
     :alt: Try me on Runboat
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
@@ -85,13 +85,13 @@ To use this module you need to:
 
       |image6|
 
-.. |image| image:: https://raw.githubusercontent.com/OCA/agreement/18.0/agreement_rebate/static/img/agreement_discount_global.png
-.. |image1| image:: https://raw.githubusercontent.com/OCA/agreement/18.0/agreement_rebate/static/img/agreement_discount_line.png
-.. |image2| image:: https://raw.githubusercontent.com/OCA/agreement/18.0/agreement_rebate/static/img/agreement_discount_section_rule_match.png
-.. |image3| image:: https://raw.githubusercontent.com/OCA/agreement/18.0/agreement_rebate/static/img/agreement_discount_section.png
-.. |image4| image:: https://raw.githubusercontent.com/OCA/agreement/18.0/agreement_rebate/static/img/agreement_rebate_lines_filter.png
-.. |image5| image:: https://raw.githubusercontent.com/OCA/agreement/18.0/agreement_rebate/static/img/create_settlements_wizard.png
-.. |image6| image:: https://raw.githubusercontent.com/OCA/agreement/18.0/agreement_rebate/static/img/create_settlement_invoices.png
+.. |image| image:: https://raw.githubusercontent.com/OCA/agreement/19.0/agreement_rebate/static/img/agreement_discount_global.png
+.. |image1| image:: https://raw.githubusercontent.com/OCA/agreement/19.0/agreement_rebate/static/img/agreement_discount_line.png
+.. |image2| image:: https://raw.githubusercontent.com/OCA/agreement/19.0/agreement_rebate/static/img/agreement_discount_section_rule_match.png
+.. |image3| image:: https://raw.githubusercontent.com/OCA/agreement/19.0/agreement_rebate/static/img/agreement_discount_section.png
+.. |image4| image:: https://raw.githubusercontent.com/OCA/agreement/19.0/agreement_rebate/static/img/agreement_rebate_lines_filter.png
+.. |image5| image:: https://raw.githubusercontent.com/OCA/agreement/19.0/agreement_rebate/static/img/create_settlements_wizard.png
+.. |image6| image:: https://raw.githubusercontent.com/OCA/agreement/19.0/agreement_rebate/static/img/create_settlement_invoices.png
 
 Bug Tracker
 ===========
@@ -99,7 +99,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/agreement/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/agreement/issues/new?body=module:%20agreement_rebate%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/agreement/issues/new?body=module:%20agreement_rebate%0Aversion:%2019.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -133,6 +133,6 @@ OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
-This module is part of the `OCA/agreement <https://github.com/OCA/agreement/tree/18.0/agreement_rebate>`_ project on GitHub.
+This module is part of the `OCA/agreement <https://github.com/OCA/agreement/tree/19.0/agreement_rebate>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.

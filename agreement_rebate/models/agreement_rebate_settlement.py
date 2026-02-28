@@ -2,7 +2,7 @@
 # Copyright 2020 Tecnativa - Sergio Teruel
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 from odoo import Command, api, fields, models
-from odoo.osv import expression
+from odoo.fields import Domain
 from odoo.tools.safe_eval import safe_eval
 
 
@@ -90,7 +90,7 @@ class AgreementRebateSettlement(models.Model):
 
     def action_show_detail(self):
         target_domains = self.line_ids.mapped("target_domain")
-        domain = expression.OR([safe_eval(d) for d in set(target_domains)])
+        domain = Domain.OR([safe_eval(d) for d in set(target_domains)])
         return {
             "name": self.env._("Details"),
             "type": "ir.actions.act_window",

@@ -27,5 +27,9 @@ class AccountMoveLine(models.Model):
             if len(settlements) == 1:
                 date_from = format_date(self.env, settlements.date_from)
                 date_to = format_date(self.env, settlements.date_to)
-                line.name += " - " + self.env._("Period: %s - %s", date_from, date_to)
+                line.name += " - " + self.env._(
+                    "Period: %(date_from)s - %(date_to)s",
+                    date_from=date_from,
+                    date_to=date_to,
+                )
         return res
