@@ -147,6 +147,22 @@ class AgreementSettlementCreateWiz(models.TransientModel):
             "price_subtotal",
         ]
 
+    def _execute_read_group(self, target_model, domain):
+        groupby = self._settlement_line_break_fields()
+        agg_specs = [f"{f}:sum" for f in self.get_agregate_fields()] + ["__count"]
+        results = target_model._read_group(domain, groupby, agg_specs)
+        agg_fields = self.get_agregate_fields()
+        dicts = []
+        for row in results:
+            d = {}
+            for i, field in enumerate(groupby):
+                d[field] = row[i]
+            for i, field in enumerate(agg_fields):
+                d[field] = row[len(groupby) + i]
+            d["__count"] = row[-1]
+            dicts.append(d)
+        return dicts
+
     def _get_amount_field(self):
         return "price_subtotal"
 
@@ -160,8 +176,8 @@ class AgreementSettlementCreateWiz(models.TransientModel):
         amount_section = 0.0
         vals = {
             "agreement_id": agreement.id,
-            "partner_id": group["partner_id"][0]
-            if "partner_id" in group
+            "partner_id": group["partner_id"].id
+            if "partner_id" in group and group["partner_id"]
             else agreement.partner_id.id,
         }
         if agreement.rebate_type == "line":
@@ -245,12 +261,7 @@ class AgreementSettlementCreateWiz(models.TransientModel):
                     domain = self._target_line_domain(
                         agreement_domain, agreement, line=line
                     )
-                    groups = target_model.read_group(
-                        domain,
-                        self.get_agregate_fields(),
-                        self._settlement_line_break_fields(),
-                        lazy=False,
-                    )
+                    groups = self._execute_read_group(target_model, domain)
                     if (
                         not groups
                         or not groups[0]["__count"]
@@ -268,12 +279,7 @@ class AgreementSettlementCreateWiz(models.TransientModel):
                         settlement_dic[key]["lines"].append((0, 0, vals))
             elif agreement.rebate_type == "section_prorated":
                 domain = self._target_line_domain(agreement_domain, agreement)
-                groups = target_model.read_group(
-                    domain,
-                    self.get_agregate_fields(),
-                    self._settlement_line_break_fields(),
-                    lazy=False,
-                )
+                groups = self._execute_read_group(target_model, domain)
                 if (
                     not groups
                     or not groups[0]["__count"]
@@ -293,12 +299,7 @@ class AgreementSettlementCreateWiz(models.TransientModel):
                 settlement_dic[key]["amount_invoiced"] += amount
             else:
                 domain = self._target_line_domain(agreement_domain, agreement)
-                groups = target_model.read_group(
-                    domain,
-                    self.get_agregate_fields(),
-                    self._settlement_line_break_fields(),
-                    lazy=False,
-                )
+                groups = self._execute_read_group(target_model, domain)
                 if (
                     not groups
                     or not groups[0]["__count"]
